@@ -1,9 +1,9 @@
-#Blockchain History
-Blockchain is a distributed database where all the transactions are recorded ever since the
+# Blockchain History
+      <p>Blockchain is a distributed database where all the transactions are recorded ever since the
 blockchain is created. The database is replicated and shared among the network participants. The main
 feature of blockchain is that it allows untrusted participants to communicate and send transactions
 between each other in a secure way without the need of trusted third party. It ensures that no one
-individual can modify or tamper with the data.
+individual can modify or tamper with the data.<p>
 
 
 # CoinFlipper-Dapp
