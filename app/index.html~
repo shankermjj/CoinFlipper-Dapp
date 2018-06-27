@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoinFlipper</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>CoinFlipper</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="../../node_modules/materialize-css/dist/css/materialize.css" rel="stylesheet">
+        <script src="./app.js"></script>
+        <style>
+            <style>::placeholder {
+                color: white;
+                opacity: 1;
+            }
+            
+            .animate-coin {
+                border-radius: 50%;
+                animation: flip 2s 1;
+            }
+            
+            @keyframes flip {
+                50% {
+                    transform: scale3d(2, 2, 2) rotateX(36000deg);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, .8);
+                }
+            }
+        </style>
+    </head>
+
+    <body style="color:#ffffff;background-color:#ffffff">
+        
+
+
+       
+      <nav class="nav-extended" style="background-color:#0a635c">
+    <div class="nav-wrapper">
+    <h6  class="brand-logo center contractaddress">CoinFlipper</h6>
+             
+      <ul class="left hide-on-med-and-down">
+      <a class="navbar-brand text-white" href="login.html">Login </a>
+      
+    </ul>
+    
+    
+      <div class="conatiner" style="padding: 10px;">
+             
+      <h6 id="Balance" style="border-radius: 10px;color:#0a635c;padding: 10px;"  class="new badge white right tooltipped" data-position="bottom" data-delay="50" data-tooltip="ContractBalance">ContractBalance</h6></div>
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+    </div>
+    </nav>
+    
+   
+    
+
+         <div id="deploy" class="Deploy center-align" style="padding-top:20px">
+         
+            <input type="button" value="Play Game" id="Deploy" class="btn waves-effect waves-light orange">
+         </div>
+
+
+        <div id="game" class="conatiner" style="padding:100px">
+            <!--CoinFlipper heading-->
+            <div class="row">
+                <!--CoinFlipper heading closed-->
+                <!--CoinFlipper Body Content-->
+                <div class="row">
+                    <div class="col s6">
+                        <div class="row" style="padding:10px;">
+                            <div class="col s12 m12">
+                                <div class="card  darken-1 z-depth-2 " style="background-color: #0a635c">
+                                    <div  class="card-content white-text">
+                                        <span class="card-title center-align">BET AND FLIP</span>
+                                        <h6>Account address</h6>
+                                        <h6 id="add2">Account address</h6>
+                                        <input placeholder="Enter Betting Amount(wei)" id="amount" type="number" class="validate">
+                                        <button class="btn waves-effect waves-light orange" id="button" type="button"  name="action">Flip
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--CoinFlipper Body Content closed-->
+                    
+                    <div class="col s2">
+                    <div class="col s4 right">
+                        <div class="col s4" >
+                            <div class="card  darken-1 z-depth-2" id="coin" style="background-color: #0a635c;height: 256px; width:256px;border-radius: 50%">
+                                <div class="card-content white-text">
+                                    <!-- Card body -->
+                                    <h3 id='bet' style="padding-top:50px;color:#ffffff;" class="center-align">WIN/LOSE</h3>
+                                </div>
+                            </div>
+                            <!-- Card body -->
+                        </div>
+                    </div>
+                </div>
+
+              <div ><h3 id="status"> </h3></div>
+            </div>
+            <script src='../../node_modules/materialize-css/dist/css/materialize.js'></script>
+            <script src='../../node_modules/jquery/dist/jquery.min.js'></script>
+            <script>
+            
+ if(sessionStorage.getItem("flag")=="0")
+            {
+                var game=document.getElementById("game");
+                game.style.display='none';
+                }
+                else
+                {
+                    var deploy=document.getElementById("Deploy");
+                deploy.style.display='none';
+
+                }                      
+            </script>
+            
+            
+    </body>
+
+    </html>
+</body>
+
+
+</html>

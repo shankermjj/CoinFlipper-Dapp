@@ -1,0 +1,39 @@
+<style>
+body {
+  background: #428184;
+  font-family: 'Ubuntu', sans-serif;
+}
+#coin {
+   
+}
+::placeholder {
+
+color:white;
+opacity:1;
+}
+#button {
+  background:orange;
+  color:#fff;
+  padding:10px 15px;
+  border-radius:2px;
+  display:inline-block;
+  transition:0.5s;
+  cursor:pointer;
+  &:hover {
+    opacity:0.5;
+  }
+}
+
+
+.animate-coin {
+  border-radius:50%;
+  animation: flip 2s 1;
+}
+@keyframes flip {
+  
+  50% {
+    transform: scale3d(2,2,2) rotateX(36000deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,.8);
+  }
+  
+}
